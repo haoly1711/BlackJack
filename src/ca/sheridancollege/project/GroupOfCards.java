@@ -54,4 +54,18 @@ public class GroupOfCards
         size = givenSize;
     }
     
+     public void addCard(Card card) {
+        if (cards.size() < size) {
+            cards.add(card);
+        }
+    }
+
+    public Card getCard(int index) {
+        if (index >= 0 && index < cards.size()) {
+            return cards.get(index);
+        }
+        return null;
+    }
+
+    
 }//end class
